@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdul Ahad — Creative Developer</title>
+    <!-- Google Fonts: Syne, Inter & Cursive Signature Font (Italianno) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italianno&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap">
+    <!-- Separate CSS File Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- GSAP Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+
+    <!-- Preloader Screen (Exact video match) -->
+    <div id="preloader">
+        <div class="loader-content">
+            <h1 id="counter">0%</h1>
+            <div class="loader-spinner"></div>
+        </div>
+        <div id="hello-text">hello</div>
+    </div>
+
+    <!-- Main Portfolio Container -->
+    <div id="main">
+        <!-- Header / Navigation -->
+        <header>
+            <div class="logo">Abdul Ahad.</div>
+            <nav class="desktop-nav">
+                <a href="#work">WORK</a>
+                <a href="#about">ABOUT</a>
+                <a href="#journal">JOURNAL</a>
+                <a href="#expertise">EXPERTISE</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+            <div class="header-right">
+                <div class="location-badge">BASED IN PAKISTAN</div>
+                <!-- Mobile Hamburger Button -->
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Mobile Slide-out Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="mobile-nav-links">
+                <a href="#work" class="mobile-link">WORK</a>
+                <a href="#about" class="mobile-link">ABOUT</a>
+                <a href="#journal" class="mobile-link">JOURNAL</a>
+                <a href="#expertise" class="mobile-link">EXPERTISE</a>
+                <a href="#contact" class="mobile-link">CONTACT</a>
+            </nav>
+        </div>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 class="hero-title">CREATIVE <span class="outline">DEVELOPER</span></h1>
+            <div class="hero-sub">
+                <span>VISUALS</span>
+                <span>•</span>
+                <span>CODE</span>
+                <span>•</span>
+                <span>EXPERIENCE</span>
+            </div>
+            <div class="scroll-down">
+                <span>SCROLL TO EXPLORE</span>
+                <div class="arrow">↓</div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="about-header">
+                <h2>ABOUT ME</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-img">
+                    <img src="IMG-20261009-WA0005.jpg" alt="Abdul Ahad">
+                </div>
+                <div class="about-content">
+                    <h3>I BUILD DIGITAL WORLDS WHERE DESIGN MEETS CODE.</h3>
+                    <p class="bio-text">Hi, I'm Abdul Ahad — a passionate Frontend Developer and Firebase backend specialist. I bridge the gap between aesthetic UI/UX design and powerful serverless functionality, while actively learning WordPress CMS.</p>
+                    
+                    <div class="about-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">NAME</span>
+                            <span class="meta-val">Abdul Ahad</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">ROLE</span>
+                            <span class="meta-val">Frontend & Firebase</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">LEARNING</span>
+                            <span class="meta-val">WordPress CMS</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">LOCATION</span>
+                            <span class="meta-val">Pakistan</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Journal Section -->
+        <section id="journal" class="journal-section">
+            <div class="section-title">
+                <h2>JOURNAL</h2>
+                <p>Thoughts, insights, and reflections on design and development.</p>
+            </div>
+            <div class="journal-list">
+                <div class="journal-item">
+                    <span class="journal-date">OCT 2026</span>
+                    <h3>The Evolution of Modern Web Animations with GSAP</h3>
+                </div>
+                <div class="journal-item">
+                    <span class="journal-date">SEP 2026</span>
+                    <h3>Serverless Architecture: Why Firebase Elevates Frontend Apps</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section id="expertise" class="expertise-section">
+            <div class="section-title">
+                <h2>MY EXPERTISE</h2>
+                <p>I design and build digital experiences where design, code, and motion work as one.</p>
+            </div>
+            <div class="expertise-grid">
+                <div class="expertise-card">
+                    <h3>Creative Development</h3>
+                    <p>Building responsive, high-performance web applications with clean, modern code and seamless interactions.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Motion & Interaction</h3>
+                    <p>Crafting engaging animations and fluid transitions using GSAP and modern JavaScript frameworks.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>UI/UX Design</h3>
+                    <p>Translating creative concepts into intuitive, user-centered digital interfaces with strong typography.</p>
+                </div>
+                <div class="expertise-card">
+                    <h3>Firebase & WordPress</h3>
+                    <p>Integrating robust Firebase backends and expanding expertise in custom WordPress solutions.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="work-section">
+            <div class="section-title">
+                <h2>MY WORK</h2>
+                <p>A curated showcase of recent digital projects, web apps, and design systems.</p>
+            </div>
+            <div class="projects-list">
+                <div class="project-item" data-img="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80">
+                    <span class="project-num">01</span>
+                    <h3>GAZU E-Commerce Platform</h3>
+                    <p>Modern clothing brand storefront featuring interactive product views and smooth checkout experience.</p>
+                </div>
+                <div class="project-item" data-img="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80">
+                    <span class="project-num">02</span>
+                    <h3>Firebase Realtime Dashboard</h3>
+                    <p>Cloud-synced management system built with secure user authentication and live database integration.</p>
+                </div>
+                <div class="project-item" data-img="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=600&q=80">
+                    <span class="project-num">03</span>
+                    <h3>Luxury Timepieces Showcase</h3>
+                    <p>High-end interactive portfolio highlighting minimalist aesthetics and typography-driven layout.</p>
+                </div>
+                <div class="project-item" data-img="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?auto=format&fit=crop&w=600&q=80">
+                    <span class="project-num">04</span>
+                    <h3>WordPress Custom Solutions</h3>
+                    <p>Tailored CMS website optimized for high performance, custom post types, and dynamic structure.</p>
+                </div>
+            </div>
+            <img id="project-popup" src="" alt="Project Preview">
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="contact-container">
+                <h2>LET'S CREATE SOMETHING MEANINGFUL.</h2>
+                <p>Have a project in mind, a question, or simply want to talk about code? I'd love to hear from you.</p>
+                
+                <div class="contact-grid">
+                    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent successfully!');">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="abdulahad6217647@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea rows="4" placeholder="Tell me about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message ↗</button>
+                    </form>
+                    
+                    <div class="contact-info">
+                        <div class="info-box">
+                            <span>Email</span>
+                            <a href="mailto:abdulahad6217647@gmail.com">abdulahad6217647@gmail.com</a>
+                        </div>
+                        <div class="info-box">
+                            <span>LinkedIn</span>
+                            <a href="https://www.linkedin.com/in/orbenix-digital-11556a417" target="_blank">View Profile ↗</a>
+                        </div>
+                        <div class="info-box">
+                            <span>Based In</span>
+                            <p>Pakistan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Abdul Ahad. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Separate JS File Link -->
+    <script src="script.js"></script>
+</body>
+                          </html>
+                          
